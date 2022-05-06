@@ -233,11 +233,14 @@ a{
         margin-bottom: 2rem;
     }
     .heading-boost{
-       color: var(); 
+       color: var(--white); 
     }
 /* Responsiveness */
 @media (max-width:600px){
     .nav-link{
         display: none;
     }
- 
+    .mobile-menu{
+        display: block;
+    }
+}
