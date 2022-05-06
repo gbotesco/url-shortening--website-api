@@ -1,0 +1,243 @@
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+:root{
+/* Primary */
+
+--Cyan: hsl(180, 66%, 49%);
+--DarkViolet:hsl(257, 27%, 26%);
+
+/* Secondary */
+
+--Red: hsl(0, 87%, 67%);
+
+/* Neutral */
+
+--Gray:hsl(0, 0%, 75%);
+--GrayishViolet: hsl(257, 7%, 63%);
+--VeryDarkBlue: hsl(255, 11%, 22%);
+--VeryDarkViolet: hsl(260, 8%, 14%);
+--white: rgb(255, 255, 255);
+}
+body{
+    font-family:poppins;
+   
+}
+header{
+    overflow-x:hidden;
+}
+nav{
+    padding: 2rem;
+}
+.row{
+    max-width: 114rem;
+    margin: 0 auto;
+}
+.header-flex{
+    display: flex;
+    align-items: center;
+    overflow-x: hidden;
+}
+.nav-list{
+    display: flex;
+    margin-left: 5rem;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.nav-link{
+    font-size: 1.5rem;
+    color:var(--Gray);
+    margin-right: 20px;
+    transition: all 0.5s;
+}
+.nav-link:hover{
+    color:var(--DarkViolet)
+}
+.nav-btn{
+    margin-left: 25rem;
+    transition: all 0.5s;
+}
+
+.btn-light{
+    margin-right: 3rem;
+    color:var(--Gray);
+    font-weight: 700;
+}
+.btn{
+    display:inline-block;
+    font-size: 1.4rem;
+}
+.btn-cta{
+    padding: .5rem 1.5rem;
+    background-color: var(--Cyan);
+    color: var(--white);
+    border-radius: 10rem;
+    font-weight: 700;
+}
+.btn-light:hover{
+    color: var(--DarkViolet);
+}
+.btn-cta:hover{
+    color: var(--Cyan);
+    background-color: var(--DarkViolet);
+}
+.mobile-menu{
+
+    display: none;
+}
+    /* header-content */
+    .hero-section{
+        display: flex;
+        justify-content:center;
+        margin-top: 5%;
+        padding-left: 5%;
+       
+    }
+    .heading-text h1{
+        font-size: 5rem;
+        font-weight: 700;
+        margin-top: 20px;
+    }
+    .header-text{
+        width: 25rem;
+    }
+    .illustration img{
+        width:45rem;
+        margin-right: -120px;
+        
+    }
+    .cta-2{
+        margin-top: 50px;
+    }
+
+    /* shorten section */
+    .shorten{
+        padding: 5rem 0;
+
+    }
+    .shorten-content{
+        background-color: var(--DarkViolet);
+        width: 90%;
+        padding: 4rem 4rem;
+        border-radius: 1rem;
+        margin-left: 70px;
+        transform: translateY(6rem)
+    }
+    .shorten-flex{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    form{
+       display: flex;
+       flex: 0 0 80%;
+       gap: 20px;
+    }
+    .form-input{
+        display: block;
+        width: 95%;
+        padding: 1rem 2rem;
+        outline: none;
+        border: none;
+        border-radius: 1rem;
+    }
+    .btn-shorten{
+        cursor: pointer;
+        border: none;
+        border-radius: 10rem;
+        padding: 1rem 3.5rem;
+        background-color: var(--Cyan);
+        color:var(--white);
+        font-family: inherit;
+    }
+    .btn-shorten:hover{
+        color: var(--Cyan);
+        background-color: var(--VeryDarkViolet);
+    }
+    /* features-note */
+    .features{
+        padding: 5rem 0 20rem 0;
+        margin-top: -5rem;
+        background-color: var(--Gray);
+    }
+    .feature-textbox{
+        text-align: center;
+        padding: 4rem 30vw;
+    }
+    .feature-text{
+        font: size 1.6rem;
+        margin-bottom: 8rem;
+    }
+    .feature-heading{
+        font-size: 3rem;
+        font-weight: 700;
+    }
+    /* feature  area */
+ 
+    .feature-grid{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 5rem;
+    }
+    .feature-card{
+        padding: 1rem 1.3rem;
+        background-color: var(--white);
+        border-radius: 1rem;
+    }
+    .feature-card-text{
+        width: 20rem;
+        font-size: 1.3rem;
+        transform:translateY(-3rem)
+    }
+    .heading-features{
+        font-size: 2rem;
+        font-weight: 700;
+        transform: translateY(-4rem);
+    }
+    .feature-card-2{
+        transform: translateY(3.5rem);
+    }
+    .feature-card-3{
+        transform: translateY(7.5rem);
+    }
+    .feature-card-icon{
+        background-color: var(--VeryDarkBlue);
+        border-radius: 10rem;
+        display: inline-block;
+        width: 5rem;
+        height: 5rem;
+        transform: translateY(-4rem);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    /* boost section */
+    .boost{
+        background-color: var(--DarkViolet);
+        padding: 5rem 0;
+    }
+    .boost-textbox{
+        text-align: center;
+    }
+    .boost-textbox h2{
+        margin-bottom: 2rem;
+    }
+    .heading-boost{
+       color: var(); 
+    }
+/* Responsiveness */
+@media (max-width:600px){
+    .nav-link{
+        display: none;
+    }
+ 
